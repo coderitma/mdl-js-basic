@@ -33,5 +33,3 @@
 16. Function
 
 17. Object
-
-
