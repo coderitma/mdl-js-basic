@@ -35,7 +35,6 @@ Contoh berikut akan "menemukan" elemen HTML (dengan id="demo"), dan mengubah kon
 
 </body>
 </html>
-
 ```
 
 JavaScript menerima tanda kutip ganda dan tunggal:

@@ -10,7 +10,7 @@
 
 5. Menghasilkan Output
 
-6. Tipe Data
+6. [Tipe Data]("Tipe Data.md")
 
 7. Operator
 
@@ -33,3 +33,5 @@
 16. Function
 
 17. Object
+
+
