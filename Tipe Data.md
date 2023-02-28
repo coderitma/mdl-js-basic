@@ -1,0 +1,146 @@
+# Tipe Data
+
+Tipe data (data type) dalam pemrograman mengacu pada jenis nilai yang dapat disimpan dan dioperasikan oleh suatu variabel, objek, atau ekspresi dalam program. Setiap tipe data memiliki kaidah atau aturan yang berbeda untuk memanipulasi data tersebut. Pemilihan tipe data yang tepat sangat penting karena dapat mempengaruhi efisiensi dan kebenaran program.
+
+Contoh, ketika kita ingin menyimpan nilai bilangan bulat (integer) seperti 1, 2, 3, maka kita memilih tipe data integer. Ketika kita ingin menyimpan nilai desimal (floating point) seperti 1.5, 2.75, 3.14, maka kita memilih tipe data float atau double. Ketika kita ingin menyimpan teks seperti "Halo" atau "Dunia", maka kita memilih tipe data string.
+
+Dalam pemrograman, penggunaan tipe data yang tepat sangat penting untuk memastikan kebenaran dan efisiensi program, sehingga seorang programmer harus memahami konsep tipe data dan aturan yang berlaku untuk setiap jenis tipe data yang tersedia.
+
+JavaScript memiliki beberapa tipe data dasar, yaitu:
+
+1. Number: tipe data untuk bilangan, baik bilangan bulat maupun desimal. Contoh: 5, 3.14.
+
+2. String: tipe data untuk teks. String diapit oleh tanda petik tunggal ('...') atau tanda petik ganda ("..."). Contoh: 'Halo', "Dunia".
+
+3. Boolean: tipe data untuk nilai kebenaran (true atau false).
+
+4. Null: tipe data untuk nilai null (kosong).
+
+5. Undefined: tipe data untuk nilai yang belum didefinisikan.
+
+6. Object: tipe data yang bisa merepresentasikan sebuah objek. Contoh: {nama: 'Andi', umur: 20}.
+
+7. Symbol: tipe data baru pada ES6 (ECMAScript 2015) yang merepresentasikan suatu nilai yang unik dan tidak dapat diubah.
+
+Selain itu, JavaScript juga memiliki tipe data kompleks yaitu Array, Function, dan Date, yang semuanya merupakan objek.
+
+## Tipe Data String
+
+Tipe data string di JavaScript digunakan untuk merepresentasikan nilai teks atau karakter. String diapit oleh tanda petik tunggal ('...') atau tanda petik ganda ("...").
+
+Contoh penggunaan tipe data string di JavaScript:
+
+```js
+var nama = "Andi";
+var pesan = 'Halo, apa kabar?';
+```
+
+Pada contoh di atas, variabel `nama` diisi dengan string "Andi", sedangkan variabel `pesan` diisi dengan string "Halo, apa kabar?". Perhatikan bahwa string dapat diapit oleh tanda petik tunggal atau tanda petik ganda, dan kedua tanda petik tersebut dapat digunakan secara bergantian. Namun, perlu diingat bahwa jika tanda petik tunggal digunakan untuk mengapit string, maka tanda petik ganda dapat digunakan dalam string, dan sebaliknya.
+
+Beberapa operasi yang dapat dilakukan pada tipe data string di antaranya:
+
+1. Concatenation: Menggabungkan dua atau lebih string menjadi satu string dengan menggunakan operator +.
+   
+   ```js
+   var kata1 = "Halo";
+   var kata2 = "Dunia";
+   var kalimat = kata1 + " " + kata2;
+   console.log(kalimat); // Output: "Halo Dunia"
+   
+   ```
+
+2. Length: Menghitung jumlah karakter pada sebuah string dengan menggunakan property `.length`.
+   
+   ```js
+   var nama = "Andi";
+   console.log(nama.length); // Output: 4
+   ```
+
+3. Indexing: Mengakses karakter pada posisi tertentu dalam sebuah string dengan menggunakan tanda kurung siku [ ].
+   
+   ```js
+   var nama = "Andi";
+   console.log(nama[0]); // Output: "A"
+   ```
+
+4. Substring: Mengambil sebagian karakter dari sebuah string dengan menggunakan method `.substring()`.
+   
+   ```js
+   var nama = "Andi";
+   console.log(nama.substring(0, 3)); // Output: "And"
+   ```
+
+5. Searching: Mencari posisi karakter tertentu dalam sebuah string dengan menggunakan method `.indexOf()`.
+   
+   ```js
+   var nama = "Andi";
+   console.log(nama.indexOf("d")); // Output: 2
+   ```
+6. Replacing: Mengganti karakter atau kata tertentu dalam sebuah string dengan menggunakan method `.replace()`.
+   
+   ```js
+   var kalimat = "Halo Dunia";
+   console.log(kalimat.replace("Dunia", "Semua")); 
+   // Output: "Halo Semua"
+   ```
+
+## Tipe Data Number
+
+Tipe data Number di JavaScript digunakan untuk merepresentasikan nilai bilangan, baik bilangan bulat maupun desimal. Tipe data Number dalam JavaScript diimplementasikan dengan menggunakan tipe data floating point 64-bit.
+
+Contoh penggunaan tipe data Number di JavaScript:
+
+```js
+var bilanganBulat = 10;
+var bilanganDesimal = 3.14;
+```
+
+Pada contoh di atas, variabel `bilanganBulat` diisi dengan nilai 10 yang merupakan bilangan bulat, sedangkan variabel `bilanganDesimal` diisi dengan nilai 3.14 yang merupakan bilangan desimal.
+
+Beberapa operasi yang dapat dilakukan pada tipe data Number di antaranya:
+
+1. Arithmetic operations: Penjumlahan, pengurangan, perkalian, pembagian, dan modulus (sisa hasil bagi) dapat dilakukan pada tipe data Number dengan menggunakan operator +, -, *, /, dan %.
+   
+   ```js
+   var x = 10;
+   var y = 3;
+   console.log(x + y); // Output: 13
+   console.log(x - y); // Output: 7
+   console.log(x * y); // Output: 30
+   console.log(x / y); // Output: 3.3333333333333335
+   console.log(x % y); // Output: 1
+   ```
+
+2. Increment and decrement: Menambah atau mengurangi nilai variabel dengan satu dapat dilakukan dengan menggunakan operator ++ atau --.
+   
+   ```js
+   var x = 10;
+   x++;
+   console.log(x); // Output: 11
+   x--;
+   console.log(x); // Output: 10
+   ```
+
+3. Comparison operations: Membandingkan dua nilai Number dapat dilakukan dengan menggunakan operator perbandingan seperti <, >, <=, >=, ==, dan !=.
+   
+   ```js
+   var x = 10;
+   var y = 3;
+   console.log(x > y); // Output: true
+   console.log(x == y); // Output: false
+   ```
+
+4. NaN (Not a Number): NaN adalah nilai khusus dalam tipe data Number yang menandakan hasil operasi yang tidak valid.
+   
+   ```js
+   console.log(0/0); // Output: NaN
+   ```
+
+5. Infinity and -Infinity: Infinity dan -Infinity adalah nilai khusus dalam tipe data Number yang menandakan nilai terlalu besar atau terlalu kecil untuk direpresentasikan sebagai tipe data Number.
+   
+   ```js
+   console.log(1/0); // Output: Infinity
+   console.log(-1/0); // Output: -Infinity
+   ```
+
+
